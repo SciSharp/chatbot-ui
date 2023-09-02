@@ -4,4 +4,5 @@ export interface ProcessEnv {
   OPENAI_API_TYPE?: 'openai' | 'azure';
   OPENAI_API_VERSION?: string;
   OPENAI_ORGANIZATION?: string;
+  AGENT_ID: string;
 }

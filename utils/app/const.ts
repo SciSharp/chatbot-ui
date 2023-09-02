@@ -19,3 +19,6 @@ export const OPENAI_ORGANIZATION =
 
 export const AZURE_DEPLOYMENT_ID =
   process.env.AZURE_DEPLOYMENT_ID || '';
+
+  export const AGENT_ID =
+  process.env.AGENT_ID || '01fcc3e5-9af7-49e6-ad7a-a760bd12dc4a';

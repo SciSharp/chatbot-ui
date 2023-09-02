@@ -20,6 +20,8 @@ import {
 } from '@/utils/app/conversation';
 import { throttle } from '@/utils/data/throttle';
 
+import { AGENT_ID } from '@/utils/app/const';
+
 import { ChatBody, Conversation, Message } from '@/types/chat';
 import { Plugin } from '@/types/plugin';
 
@@ -99,6 +101,8 @@ export const Chat = memo(({ stopConversationRef }: Props) => {
           key: apiKey,
           prompt: updatedConversation.prompt,
           temperature: updatedConversation.temperature,
+          conversationId: selectedConversation.id,
+          agentId: AGENT_ID
         };
         const endpoint = getEndpoint(plugin);
         let body;

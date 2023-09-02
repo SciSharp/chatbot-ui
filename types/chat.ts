@@ -12,7 +12,9 @@ export interface ChatBody {
   messages: Message[];
   key: string;
   prompt: string;
-  temperature: number;
+  temperature: number,
+  agentId: string,
+  conversationId: string;
 }
 
 export interface Conversation {
